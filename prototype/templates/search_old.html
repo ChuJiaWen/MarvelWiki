@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search | MarvelWiki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;}
+        a{
+            font-size: calc(5px + 0.8vw);
+            color: #b75036;
+        }
+        a:hover {
+            color: #deb344;
+            text-decoration: none;
+        }
+        nav li{
+            margin: 0.5vh 1.5em;
+            padding: 0.5vh 0;
+            box-sizing: border-box;
+            width: 80%;
+            font-size: 15px;
+            display: inline;
+            text-align: center;
+        }
+        nav ul {
+            padding-inline-start: 0;
+            margin-block-start: 0;
+            margin:auto;
+            margin: 3vh 1vw;
+            text-align:center;
+		    box-sizing:border-box;
+            border-bottom: solid gray(1) 5px;
+        }
+        nav a {
+            color: #5aa7e8;
+            font-size: calc(4px + 1vw);
+        }
+        nav a:hover {
+            color: #81e0e0;
+            text-decoration: none;
+        }
+        nav{
+            border-bottom: solid gray(1) 5px;
+
+        }
+        .photos{
+            border: double 8px darkred;
+            padding: 2vh 3vw;
+        }
+        h3.caption , h3.tag{border-bottom: dashed dimgrey 2px;
+            margin: 0;
+        }
+        h3.caption{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href='/search'>Search a character</a> </li>
+        <li><a href='/test'>Go to Test page</a></li>
+{#        <li><a href='/#'>#</a></li>#}
+{#        <li><a href='/#'>#</a></li>#}
+{#        <li><a href='/#'>#</a></li>#}
+{#        <li><a href='/#'>#</a></li>#}
+        <li><a href='/'>Home</a></li>
+    </ul>
+</nav>
+<hr>
+<hr>
+    <form method="POST" action="/search">
+        <label for="content">Search:</label>
+        <input type="text" name="name" required="true"  size="50"/><br />
+        <label for="distinction">Option:</label>
+        <input type="radio" id="name search" name="distinction" value='0' checked="checked">
+        <label for="tag search">By Name<sub>(Return only characters matching the specified full character name (e.g. Spider-Man).)</sub></label>
+{#        <input type="radio" id="comment search" name="distinction" value='1' >#}
+{#        <label for="comment search">Comment Search<sub>(Exactly match)</sub></label>#}
+        <br>
+        <input type="submit" value="Search"/>
+    </form>
+<hr>
+<div id="message">
+    {% if message %}
+        <h3>{{ message }}</h3>
+    {% else %}
+        <h3>Sorry, the character you are searching has no results. Please try using other names.</h3>
+    {% endif %}
+</div>
+
+<div id="description">
+    {% if description %}
+        <p>{{ description }}</p>
+    {% endif %}
+    {% if img %}
+        <img src={{ img }}>
+    {% endif %}
+</div>
+
+
+</body>
+</html>

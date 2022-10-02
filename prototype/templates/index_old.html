@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | MarvelWiki</title>
+</head>
+<body>
+<hr>
+<nav>
+    <ul>
+        <li><a href='/search'>Search a character</a> </li>
+        <li><a href='/test'>Go to Test page</a></li>
+{#        <li><a href='/#'>#</a></li>#}
+{#        <li><a href='/#'>#</a></li>#}
+{#        <li><a href='/#'>#</a></li>#}
+{#        <li><a href='/#'>#</a></li>#}
+        <li><a href='/'>Home</a></li>
+    </ul>
+</nav>
+<hr>
+<h1>Welcome to our Marvel Wiki page!</h1>
+<hr>
+    <form method="POST" action="/search">
+        <label for="content">Search:</label>
+        <input type="text" name="name" required="true"  size="50"/><br />
+        <label for="distinction">Search option:</label>
+        <input type="radio" id="name search" name="distinction" value='0' checked="checked">
+        <label for="tag search">By Name<sub>(Return only characters matching the specified full character name (e.g. Spider-Man).)</sub></label>
+{#        <input type="radio" id="comment search" name="distinction" value='1' >#}
+{#        <label for="comment search">Comment Search<sub>(Exactly match)</sub></label>#}
+        <br>
+        <input type="submit" value="Search"/>
+    </form>
+<hr>
+</body>
+</html>

@@ -1,0 +1,21 @@
+GitHub repo: https://github./yinyang513/mcuftwcom
+1.	Marvel Cinematic Universe Database
+a.	List of characters
+i.	Profile of movies they were in 
+ii.	Spotify playlist catered to a specific character
+b.	APIs plan to use
+i.	Marvel API: https://developer.marvel.com/docs
+ii.	Spotify API: https://developer.spotify.com/documentation/
+c.	Meme generator?
+i.	Meme API: https://rapidapi.com/collection/meme 
+
+Our first project idea is a Marvel Interactive Web Application that allows users to step into the shoes of their favorite Marvel characters. The Web Application will have three main features:  character profiles with the list of movies they were in along with all relevant information. The Web Application will have a user sign in that links to their Spotify account so that they can down
+
+2.	Road trip Planner
+a.	Using map API: Google Maps API, Yelp API for restaurants
+b.	Generate route plan using a specified list of locations
+c.	Each location would have its own profile
+i.	Basic info
+ii.	Recommended locations nearby
+
+Our second idea features a road trip planner that will generate a route from one place to another with recommended restaurants, gas stations, hotels, or anything fun that is on the way. We will be using the Google Maps API and Yelp API for restaurants and food. Each location will have its own recommendations based on rating of the venues. We will use the Google Map API to find a sufficient route from one place to another. The Yelp APi will be used to look for good restaurants. Since there are many restaurants in one area, the user will be allowed to filter their choices based on rating and type of food. For the web application, the user will be allowed to keep a profile of their favorite routes or a plan for future road trips they would need. 
