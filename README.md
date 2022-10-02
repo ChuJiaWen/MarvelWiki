@@ -1,5 +1,5 @@
-# mcuftw
+# MarvelWiki
 CS 411 A1
-Team 7
+Team 7 Project
 
-Team members: Ike Okoye, Thomas Kwon, Ying Yip, Jiawen Chu
+Team members: Ying Yip, Jiawen Chu
